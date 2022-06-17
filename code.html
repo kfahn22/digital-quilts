@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>After the Bell</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1>AFTER THE BELL</h1>
+		<nav id="myNavBar">
+			<div class="overlay" id="myNav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<div class="overlay-content">
+					<a href="../html/about.html" id="aboutMe">About</a>
+					<a href="../html/digital_quilts.html" id="genArt">Digital Quilts with WFC</a>
+				</div>
+			</div>
+
+			<div class="topNav">
+				<a href="../html/index.html" class="active" id="a0">Home</a>
+				<a href="../html/about.html">About</a>
+				<a href="../html/digital_quilts.html">Digital Quilts with WFC</a>
+				<a href="../html/tiles.html">Digital Quilts with WFC</a>
+                <a href="../html/code.html">Code for tiles</a>
+			</div>
+		</nav>
+	</header>
+	<div>
+		<h1>Code used to create tiles</h1>
+        <p>The tiles were created using shaders.  </p>
+		<div class="images">
+				<div>
+                    <p>Tile B:  Half circle</p>
+					<code>
+						float sdCircle( vec2 uv, float r) {
+						return length(uv) - r;
+						}
+
+						float s = sdCircle( uv-vec2(0.5, 0.0), 0.5 );
+						float m = S(0.008, 0.0, s);
+					</code>
+				</div>
+				<br>
+				
+			</div>
+			
+			<div>
+                <p>Tile C:  Half Square</p>
+				<code>
+					//From Inigo Quilez
+					float sdBox( vec2 uv, vec2 b )
+					{
+					vec2 d = abs(uv)-b;
+					return length(max(d,0.0)) + min(max(d.x,d.y),0.0);
+					}
+					<br>
+					float s1 = sdBox( uv - vec2(0.5, 0.0), vec2(0.5, 0.5));
+					float m1 = S(0.008, 0.0, s1);
+				</code>
+				<p>Here is a link to the p5.js sketch generating and using this tile. <a class="link" href=""></a></p>
+			</div>
+		</div>
+		<img src="assets/tiles/3.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/4.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/5.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/6.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/7.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/8.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<!-- "tribal" tiles -->
+		<img src="assets/tiles/9.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/10.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/11.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/12.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/13.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/14.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/15.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<!-- "loop" tiles -->
+		<img src="assets/tiles/21.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/22.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/23.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/24.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/25.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<!-- "cross stitch" tiles -->
+		<img src="assets/tiles/30.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/31.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/32.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/33.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/34.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/35.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<!-- "train track" tiles -->
+		<img src="assets/tiles/41.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/42.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/43.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/44.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/45.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/46.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<!-- "tube" tiles -->
+		<img src="assets/tiles/51.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/52.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/53.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/54.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/55.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+		<img src="assets/tiles/56.png" alt="loop tile" width="40" height="40"
+			style="vertical-align:bottom;border:1px solid black">
+
+	</div>
+
+	</div>
+
+
+	<!-- This function is for a read more read less button -->
+	<!-- Code found on codepen legendaryPower "Simple Read Less Read More Button"-->
+	<script>
+		$(document).ready(function () {
+			$("#toggle").click(function () {
+				var elem = $("#toggle").text();
+				if (elem == "Code") {
+					//Stuff to do when btn is in the read more state
+					$("#toggle").text("Close");
+					$("#text").slideDown();
+				} else {
+					//Stuff to do when btn is in the read less state
+					$("#toggle").text("Code");
+					$("#text").slideUp();
+				}
+			});
+		});
+	</script>
+	<script>
+	// Get the modal
+	var modal = document.getElementById("myModal");
+	
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById("myImg");
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	img.onclick = function(){
+	  modal.style.display = "block";
+	  modalImg.src = this.src;
+	  captionText.innerHTML = this.alt;
+	}
+	
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+	
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+	  modal.style.display = "none";
+	}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>After the Bell</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+	<header>
+		<h1>Wave Function Collapse Algorithm</h1>
+		<nav id="myNavBar">
+			<div class="overlay" id="myNav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<div class="overlay-content">
+					<!-- <a href="about.html" id="aboutMe">About</a> -->
+					<!-- <a href="wfc.html">WFC</a> -->
+					<a href="digital_quilts.html" id="genArt">Digital Quilts</a>
+					<a href="tiles.html" id="tiles">Tiles</a>
+					<a href="tile_creator.html">Tile Creator</a>
+					<a href="resources.html">Resources</a>
+					<!-- <a href="code.html">Code</a> -->
+				</div>
+			</div>
+
+			<div class="topNav">
+				<a href="index.html" class="active" id="a0">Home</a>
+				<!-- <a href="about.html">About</a> -->
+				<a href="wfc.html">WFC</a>
+				<a href="digital_quilts.html">Digital Quilts</a>
+				<a href="tiles.html">Tiles</a>
+				<a href="tile_creator.html">Tile Creator</a>
+				<a href="resources.html">Resources</a>
+				<!-- <a href="code.html">Code</a> -->
+			</div>
+
+			<!-- Use any element to open/show the overlay navigation menu-->
+			<button id="ham"><span onclick="openNav()"><i class="fa fa-bars"></i></span></button>
+		</nav>
+	</header>
+
+	<div class="container" id="flex">
+		<!--<input class="form-control" id="myInput" type="text" placeholder="Search.."> -->
+
+		<div class="" id="intro">
+			<div class="container">
+				<div id="bella">
+					<h2 id="construction">SITE UNDER CONSTRUCTION</h2>
+					<div class="tile"> <img src="assets/bella.png" alt="blank" width="200" height="200"
+							style="vertical-align:bottom;">
+					</div>
+				</div>
+				<div>
+
+					<p>
+						Hi! I am Bella, and I am the official mascot of this website. You can find information about the
+						wave function collapse algorithm here. There are interactive examples in Digital Quilts,
+						resources for teachers
+						and afterschool/summer camp leaders (coming soon), links to videos and articles that discuss the
+						wave function collapse alorighm. The code that was used to generate the tiles and quilts can be found 
+						<a href="https://github.com/kfahn22/wfc-tiles/tree/main/tile-sketches">here.</a>
+					</p>
+
+				</div>
+
+				<!-- javascript -->
+				<!-- This function toggles a read more button -->
+				<script>
+					$(document).ready(function () {
+						$("#myInput").on("keyup", function () {
+							var value = $(this).val().toLowerCase();
+							$("#myDIV *").filter(function () {
+								$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+							});
+						});
+					});
+				</script>
+
+				<!-- This function is for a Read more read less button -->
+				<!-- Code found on codepen legendaryPower "Simple Read Less Read More Button"-->
+				<script>
+					$(document).ready(function () {
+						$("#toggle").click(function () {
+							var elem = $("#toggle").text();
+							if (elem == "Answer") {
+								//Stuff to do when btn is in the read more state
+								$("#toggle").text("Close");
+								$("#text").slideDown();
+							} else {
+								//Stuff to do when btn is in the read less state
+								$("#toggle").text("Answer");
+								$("#text").slideUp();
+							}
+						});
+					});
+				</script>
+
+				<!--This function open and closes a curtain overlay -->
+
+				<script>
+					/* Open when someone clicks on the span element */
+					function openNav() {
+						document.getElementById("myNav").style.width = "100%";
+					}
+
+					/* Close when someone clicks on the "x" symbol inside the overlay */
+					function closeNav() {
+						document.getElementById("myNav").style.width = "0%";
+					}
+				</script>
+</body>
+
+</html>
