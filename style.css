@@ -1,5 +1,5 @@
 html, body {
-  margin: 1vw;
+  margin: 0vw;
   /* padding: 2vw; */
   background-color: #1ba1db;
 }
@@ -13,11 +13,28 @@ header{
   font-size: 100%;
 }
 
+header #index {
+  height: 20vh; 
+  margin-bottom: 10vh;
+}
+
 p {
   margin-left: auto;
   margin-right: auto;
-  padding: 2vw;
-  font-size:xx-large;
+  padding: 1vw;
+  font-size:x-large;
+}
+
+div #intro {
+  width: 45vw;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+div #bella {
+  width: 30vw;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 li {
@@ -95,6 +112,7 @@ h1{
   text-align:center;
 }
 
+
 canvas {
   display: block;
 }
@@ -106,8 +124,8 @@ code {
 }
 
 div {
-  margin: 2vh;
-  padding: 2vw;
+  margin: 1vh;
+  padding: 1vw;
   color: #fff;
 }
 

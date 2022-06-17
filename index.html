@@ -18,7 +18,7 @@
 </head>
 
 <body>
-	<header>
+	<header id="index">
 		<h1>Wave Function Collapse Algorithm</h1>
 		<nav id="myNavBar">
 			<div class="overlay" id="myNav">
@@ -49,76 +49,75 @@
 			<button id="ham"><span onclick="openNav()"><i class="fa fa-bars"></i></span></button>
 		</nav>
 	</header>
-
-	<div class="container" id="flex">
-		<!--<input class="form-control" id="myInput" type="text" placeholder="Search.."> -->
-
-		<div class="" id="intro">
-			<div class="container">
-				<div id="bella">
-					<h2 id="construction">SITE UNDER CONSTRUCTION</h2>
-					<div class="tile"> <img src="assets/bella.png" alt="blank" width="200" height="200"
-							style="vertical-align:bottom;">
-					</div>
+    <div>
+		<h2 id="construction">SITE UNDER CONSTRUCTION</h2>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div id="bella">
+				
+				<div class="tile"> <img src="assets/bella.png" alt="blank" width="400" height="400"
+						style="vertical-align:bottom;">
 				</div>
-				<div>
+			</div>
+			<div id = "intro">
+				<p>
+					Hi! I am Bella, and I am the official mascot of this website. You can find information about the
+					wave function collapse algorithm here. There are interactive examples in Digital Quilts,
+					resources for teachers
+					and afterschool/summer camp leaders (coming soon), links to videos and articles that discuss the
+					wave function collapse algorithm. The code that was used to generate the tiles and quilts can be
+					found
+					<a href="https://github.com/kfahn22/wfc-tiles/tree/main/tile-sketches">here.</a>
+				</p>
 
-					<p>
-						Hi! I am Bella, and I am the official mascot of this website. You can find information about the
-						wave function collapse algorithm here. There are interactive examples in Digital Quilts,
-						resources for teachers
-						and afterschool/summer camp leaders (coming soon), links to videos and articles that discuss the
-						wave function collapse alorighm. The code that was used to generate the tiles and quilts can be found 
-						<a href="https://github.com/kfahn22/wfc-tiles/tree/main/tile-sketches">here.</a>
-					</p>
-
-				</div>
-
-				<!-- javascript -->
-				<!-- This function toggles a read more button -->
-				<script>
-					$(document).ready(function () {
-						$("#myInput").on("keyup", function () {
-							var value = $(this).val().toLowerCase();
-							$("#myDIV *").filter(function () {
-								$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-							});
-						});
+			</div>
+		</div>
+		<!-- javascript -->
+		<!-- This function toggles a read more button -->
+		<script>
+			$(document).ready(function () {
+				$("#myInput").on("keyup", function () {
+					var value = $(this).val().toLowerCase();
+					$("#myDIV *").filter(function () {
+						$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
 					});
-				</script>
+				});
+			});
+		</script>
 
-				<!-- This function is for a Read more read less button -->
-				<!-- Code found on codepen legendaryPower "Simple Read Less Read More Button"-->
-				<script>
-					$(document).ready(function () {
-						$("#toggle").click(function () {
-							var elem = $("#toggle").text();
-							if (elem == "Answer") {
-								//Stuff to do when btn is in the read more state
-								$("#toggle").text("Close");
-								$("#text").slideDown();
-							} else {
-								//Stuff to do when btn is in the read less state
-								$("#toggle").text("Answer");
-								$("#text").slideUp();
-							}
-						});
-					});
-				</script>
-
-				<!--This function open and closes a curtain overlay -->
-
-				<script>
-					/* Open when someone clicks on the span element */
-					function openNav() {
-						document.getElementById("myNav").style.width = "100%";
+		<!-- This function is for a Read more read less button -->
+		<!-- Code found on codepen legendaryPower "Simple Read Less Read More Button"-->
+		<script>
+			$(document).ready(function () {
+				$("#toggle").click(function () {
+					var elem = $("#toggle").text();
+					if (elem == "Answer") {
+						//Stuff to do when btn is in the read more state
+						$("#toggle").text("Close");
+						$("#text").slideDown();
+					} else {
+						//Stuff to do when btn is in the read less state
+						$("#toggle").text("Answer");
+						$("#text").slideUp();
 					}
+				});
+			});
+		</script>
 
-					/* Close when someone clicks on the "x" symbol inside the overlay */
-					function closeNav() {
-						document.getElementById("myNav").style.width = "0%";
-					}
-				</script>
+		<!--This function open and closes a curtain overlay -->
+
+		<script>
+			/* Open when someone clicks on the span element */
+			function openNav() {
+				document.getElementById("myNav").style.width = "100%";
+			}
+
+			/* Close when someone clicks on the "x" symbol inside the overlay */
+			function closeNav() {
+				document.getElementById("myNav").style.width = "0%";
+			}
+		</script>
 </body>
 
 </html>
