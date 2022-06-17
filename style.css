@@ -116,6 +116,7 @@ h1{
 canvas {
   display: block;
 }
+
 code {
   padding: 1vw;
   background-color: #4a9abd;
@@ -142,7 +143,7 @@ iframe {
 
 a:link, a:visited {
   color: black;
-  background-color: #fff;
+  /* background-color: #fff; */
   padding: 5px 10px;
   text-align: center;
   text-decoration: none;
@@ -150,7 +151,8 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  background-color: #595959;
+  color: #3487ab;
+  background-color: #41addb;
 }
 
 /* Style the Image Used to Trigger the Modal */
@@ -238,21 +240,6 @@ nav .topNav {visibility:hidden  !important;}
 }
 
 
-.card {
-  margin-top: 1%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 5%;
-}
-.card-body {
-  background-color: #ffffff;
-
-}
-.card-img-top{
-  margin-left: auto !important;
-  margin-right: auto !important;
-  max-width: 200px;
-}
 /* When the height of the screen is less than 450 pixels, change the font-size of
 the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
@@ -294,13 +281,14 @@ the links and position the close button again, so they don't overlap */
         margin-left: 2%;
         margin-right:2%;
         }
+        
     .topNav a:active {
-            color: #60fbff !important;
+            color: #031b1c !important;
             border: 4px solid #60fbff;
         }
     .topNav a:hover {
-        color: #30a0fc;
-        border: 4px solid #30a0fc;
+        color: #091824;
+        border: 4px solid #091824;
     }
     .flex-container {
        flex-direction:row;

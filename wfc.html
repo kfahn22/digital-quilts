@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Wave Function Collapse Algorithm</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header id="resources">
+        <h1>The Wave Function Collapse Algorithm</h1>
+        <nav id="myNavBar">
+            <div class="overlay" id="myNav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <!-- <a href="../html/about.html" id="aboutMe">About</a> -->
+                    <a href="wfc.html" id="wfc">WFC</a>
+                    <a href="digital_quilts.html" id="digQuilt">Digital Quilts</a>
+                    <a href="resources.html" id="tiles">Tiles</a>
+                </div>
+            </div>
+
+            <div class="topNav">
+                <a href="index.html" class="active" id="a0">Home</a>
+                <!-- <a href="../html/about.html">About</a> -->
+                <a href="wfc.html">WFC</a>
+                <a href="digital_quilts.html">Digital Quilts</a>
+                <a href="resources.html">Tiles</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div id="wfc">
+                <div>
+                    <h2>So What is the Wave Function Collapse algorithm?</h2>
+                    <p>The wave function collapse algorithm is computer code that is used to procedurally
+                        generate textures (such as a brick wall, forest, or building) and 3D models. One common use for this code is to create the backgrounds you see
+                        in computer games.
+                    </p>
+                    <p>There are two types of wave function collapse:  the tile model and the overlapping model.  This is an 
+                        implemention of the tile model.  In this implementation of the 
+                        tile model (code by <a href='https://github.com/CodingTrain/Wave-Function-Collapse'>Daniel Shiffman</a>), the computer randomly chooses a tile and places it in the grid. There are "adjacency
+                        rules" that determine
+                        which tiles can be placed next to the first tile. The second tile is placed in the spot with the smallest number of 
+                        possible valid tiles.
+                    </p>
+                </div>
+
+                <h2>Key concepts</h2>
+                <div>
+                    <div>
+                        <li>Procedural generation</li>
+                        <p>
+                            "In computing, procedural generation is a method of creating data algorithmically as opposed
+                            to manually, typically through a combination of human-generated assets and algorithms
+                            coupled with computer-generated randomness and processing power. In computer graphics, it is
+                            commonly used to create textures and 3D models. In video games, it is used to automatically
+                            create large amounts of content in a game." Source:
+                            https://en.wikipedia.org/wiki/Procedural_generation
+                        </p>
+                    </div>
+                    <div>
+                        <li>Superposition</li>
+                        <p>
+                            The essence of the concept of superposition is that all possible states are
+                            equally likely. The classic example is a blank sudoku board. Before any numbers are filled
+                            in, each spot in the grid can take any of the numbers 1-9.
+                        </p>
+                    </div>
+                    <div>
+                        <li>Possibility space</li>
+                        <p>
+                            The possibility space for each spot on the grid is the list of all possible valid tiles that
+                            could be placed there.
+                        </p>
+                    </div>
+                    <div>
+                        <li>Lowest possibility state</li>
+                        <p>
+                            The spot with the fewest possible valid tiles is the one with the lowest possiblity state.
+                        </p>
+                    </div>
+                    <div>
+                        <li> Entropy</li>
+                        <p>Entropy is a measure of the amount of uncertainty left regarding a spot on the grid. A spot that only had one possible valid tile would have low 
+                            entropy and a spot that had many possibilities would have high entropy.
+                        </p>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+</script>
+</body>
+
+</html>

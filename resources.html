@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Digital-Quilts</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<header id="resources">
+		<h1>Resources</h1>
+		<nav id="myNavBar">
+			<div class="overlay" id="myNav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<div class="overlay-content">
+					<!-- <a href="../html/about.html" id="aboutMe">About</a> -->
+					<a href="wfc.html" id="wfc">WFC</a>
+					<a href="digital_quilts.html" id="digQuilt">Digital Quilts</a>
+					<a href="tiles.html" id="tiles">Tiles</a>
+				</div>
+			</div>
+
+			<div class="topNav">
+				<a href="index.html" class="active" id="a0">Home</a>
+				<!-- <a href="../html/about.html">About</a> -->
+				<a href="wfc.html">WFC</a>
+				<a href="digital_quilts.html">Digital Quilts</a>
+				<a href="tiles.html">Tiles</a>
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div id="sudoku">
+				<h2>Sudoku</h2>
+				<p>Sudoku can be used to explain the algorithm that is used to generate the "digital" quilts. 
+
+					Simple sudoku worksheets suitable for elementary children can be found
+					<a href="https://www.sudokuweb.org">here.</a></p>
+			</div>
+			<div>
+				<p>
+					Add worksheet for wave function algorithm here.
+				</p>
+			</div>
+			<div>
+				<h2>More Information about the Wave Function Collapse Algorithm</h2>
+				<div>
+					<h2>Articles</h2>
+					<p><a href="https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/">Robert Heaton</a>
+						compares the wave function collapse algorithm to creating a seating chart at a wedding.
+					</p>
+					<p>
+						This article by <a href="https://chloesun.medium.com/implementation-of-wave-function-collapse-algorithm-in-houdini-for-3d-content-generation-76f8eec573b1">Chloe Sun</a> discusses the use of the wave function algorithm to 3D generation.
+						Note:  this gets very technical.
+					</p>
+				</div>
+				<div>
+					<h2>Videos</h2>
+					<p>
+						Martin Donald has a wonderful <a href="https://www.youtube.com/watch?v=2SuvO4Gi7uY">youTube
+							video</a> that uses sudoku to explain the
+						wave function collapse algorithm. Note that it gets quite technical, so only the first part will
+						be
+						appropriate for beginners.
+					</p>
+					<p>
+						This <a href="https://github.com/mxgmn/WaveFunctionCollapse">github repository</a> has some
+						really
+						great examples of the wave function collapse alogrithm.
+					</p>
+					<p>
+						Add link to Coding Train wave function algorithm challenge when released.
+					</p>
+					<p>Here is a <a href='https://www.youtube.com/watch?v=DOQTr2Xmlz0'>video</a> which shows the wfc
+					algorithm in practice.</p>
+				</div>
+			</div>
+			<div>
+				<h2>Coding Resources for Beginners</h2>
+				<p>
+					There are several websites that provide tutorials for beginners. Dan Shiffman, who teaches at the
+					Interactive
+					Telecommunications Program at NYU's Tisch School for the Arts has some wonderful tutorials for
+					beginners on his
+					<a href="https://thecodingtrain.com/tracks/code-programming-with-p5-js">Coding Train</a> website.
+				</p>
+				<p>The <a href="https://codeguppy.com">Code Guppy</a> is a site where kids 13+ and teens can learn
+					JavaScript coding through fun
+					and easy to follow tutorials. </p>
+
+
+			</div>
+		</div>
+	</div>
+</body>
+
+<script>
+	// Get the modal
+	var modal = document.getElementById("myModal");
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById("myImg");
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	img.onclick = function () {
+		modal.style.display = "block";
+		modalImg.src = this.src;
+		captionText.innerHTML = this.alt;
+	}
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function () {
+		modal.style.display = "none";
+	}
+</script>
+</body>
+
+</html>
