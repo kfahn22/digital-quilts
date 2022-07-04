@@ -49,31 +49,71 @@ header #digital_quilts {
 }
 
 header #circles{
-  height: 25vh;
+  /* height: 25vh; */
   background-image: url("assets/header/circle.png");
   background-repeat:repeat-x;
   background-size: cover;
   color: #1ba1db;
+  font-size: 300%;
 }
 
 header #tribal{
-  background-image: url("assets/digital_quilts/tribal.png");
+  background-image: url("assets/header/tribal.png");
   background-repeat:repeat-x;
   background-size: cover;
   height: 18vh;
-  color: #1ba1db;
+  color: #0d3b66;
   margin-bottom: 2%;
-  font-size: 200%;
+  font-size: 300%;
+}
+header #barbell{
+  background-image: url("assets/header/dogbone.png");
+  background-repeat:repeat-x;
+  background-size: cover;
+  height: 18vh;
+  color: #0d3b66;
+  margin-bottom: 2%;
+  font-size: 300%;
+}
+
+header #tubes{
+  background-image: url("assets/header/tubes.png");
+  background-repeat:repeat-x;
+  background-size: cover;
+  height: 18vh;
+  color: #0d3b66;
+  margin-bottom: 2%;
+  font-size: 300%;
 }
 
 header #loops{
-  background-image: url("assets/digital_quilts/loops.png");
+  background-image: url("assets/header/loops.png");
   background-repeat:repeat-x;
   background-size: cover;
   height: 18vh;
-  color: #1ba1db;
+  color: #0d3b66;
   margin-bottom: 2%;
-  font-size: 200%;
+  font-size: 300%;
+}
+
+header #crossStitch{
+  background-image: url("assets/header/crossstitch.png");
+  background-repeat:repeat-x;
+  background-size: cover;
+  height: 18vh;
+  color: #0d3b66;
+  margin-bottom: 2%;
+  font-size: 300%;
+}
+
+header #maze{
+  background-image: url("assets/header/maze.png");
+  background-repeat:repeat-x;
+  background-size: cover;
+  height: 6vh; 
+  color: #0d3b66;
+  /* margin-bottom: 2%; */
+  font-size: 300%;
 }
 
 /* header img {
@@ -82,22 +122,44 @@ header #loops{
 
 header #train{
   background-color: #def0ed;
-  background-image: url("assets/digital_quilts/train.png");
+  background-image: url("assets/header/train.png");
   background-repeat:repeat-x;
   background-size: cover;
   height: 12vh;
   margin-bottom: 2%;
-  color: #1ba1db;
+  color: #0d3b66;
+  font-size: 300%;
+}
+
+header #trainTracks{
+  background-color: #def0ed;
+  background-image: url("assets/header/smallTracks.png");
+  background-repeat:repeat-x;
+  background-size: cover;
+  height: 12vh;
+  margin-bottom: 2%;
+  color: #0d3b66;
+  font-size: 300%;
+}
+
+header #playground{
+  background-color: #def0ed;
+  background-image: url("assets/header/playground.png");
+  background-repeat:repeat-x;
+  background-size: cover;
+  height: 12vh;
+  margin-bottom: 2%;
+  color: #0d3b66;
   font-size: 300%;
 }
 
 h1{
   font-family: Arial, Helvetica, sans-serif;
-  padding: 1%;
+  padding: 5%;
   font-size: 300%;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 2px 2px #0D1A44;
+  /* text-shadow: 2px 2px #0D1A44; */
   color: #FFFFFF;
 }
 
@@ -112,7 +174,13 @@ h1{
   text-align:center;
 }
 
+#pg {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+  color: #fff;
 
+}
 canvas {
   display: block;
 }
